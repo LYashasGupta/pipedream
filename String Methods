@@ -1,0 +1,107 @@
+c = 'a collection of alphabets, words or other characters'
+c
+
+dir(c)
+
+"""'isalnum','isalpha','isascii','isdecimal','isdigit',
+ 'isidentifier','islower','isnumeric','isprintable','isspace',
+ 'istitle','isupper'"""
+
+# isalnum: Returns true if the string contains numeric and alphabets if not prints false.
+# returns true when there is numbers or alphabets in given string. 
+
+x = '23number'
+x.isalnum()
+
+gt = 'sede345@'
+gt.isalnum()
+
+d = '#$%@##3s'
+d.isalnum()
+
+# isalpha: returns true if the string contains alphabetic.Otherwise zero.
+# returns true also there is only one string.
+
+d = 'shghfcvfr'
+d.isalpha()
+
+# isascii: returns true if the string contains in acci table.
+
+h = '{'
+h.isascii()
+
+ord('{')
+
+# isdecimal: returns true if the given string is float.(ask sir)
+s = '89.89'
+s.isdecimal()
+
+# isdigit: returns true if the string contains digits.
+
+z = '23'
+z.isdigit()
+
+# isidentifier():
+# A string is considered a valid identifier if it only contains 
+#alphanumeric letters (a-z) and (0-9), or underscores (_). 
+# A valid identifier cannot start with a number, or contain any spaces.
+
+w = 'a3_'
+w.isidentifier()
+
+#islower: returns true if all the characters are in lowercase.
+
+s = 'edcvre'
+r = 'sedcF'
+s.islower(), r.islower()
+
+# isnumeric(): returns true if all the characters in given string are numbers.
+
+x = '3452s'
+o = '56'
+x.isnumeric(), o.isnumeric()
+
+#isprintable: returns true if the strings are printable.
+
+#Some Unicode characters, such as “Other” and “Separator,” are not printable. 
+#Non-Printable characters include all escape characters such as 
+#'\n', \'t', '\r', '\x16', '\xlf', and so on.
+
+rt = "hello \n world"
+print(rt)
+print(rt.isprintable())
+
+dfg = " hello world"
+dfg.isprintable()
+
+# isspace(): returns true when there are whitespaces in string.
+cv = " Hello world    "
+vc = "  "
+cv.isspace(), vc.isspace()
+
+#istitle(): returns true if it follows the rules of title function.
+
+txt = "Hello, and Welcome TO my World!"
+
+print(txt, txt.title(), txt.title(), sep = '\n\n')
+
+#isupper(): returns true if the all characters are in uppercase.
+
+sd = "JUSTICE LEAGUE"
+dc = "JUST3ICE LEAGUE"
+cb = "Justice League"
+
+sd.isupper(),dc.isupper(),cb.isupper()
+
+help(str.format)
+
+er = 34.56
+print(type(er))
+
+ord(" ")
+
+sd = "d;"
+sd.isascii()
+
+
+
